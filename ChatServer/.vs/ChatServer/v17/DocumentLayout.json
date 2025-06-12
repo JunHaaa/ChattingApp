@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jjh98\\OneDrive\\Documents\\GitHub\\ChattingApp\\ChatServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{934EA747-B4D7-4C8F-8491-9B1791DCE83D}|ChatServer\\ChatServer.csproj|c:\\users\\jjh98\\onedrive\\documents\\github\\chattingapp\\chatserver\\chatserver\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934EA747-B4D7-4C8F-8491-9B1791DCE83D}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Server.cs",
+              "DocumentMoniker": "C:\\Users\\jjh98\\OneDrive\\Documents\\GitHub\\ChattingApp\\ChatServer\\ChatServer\\Server.cs",
+              "RelativeDocumentMoniker": "ChatServer\\Server.cs",
+              "ToolTip": "C:\\Users\\jjh98\\OneDrive\\Documents\\GitHub\\ChattingApp\\ChatServer\\ChatServer\\Server.cs",
+              "RelativeToolTip": "ChatServer\\Server.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAiwDUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T11:43:19.363Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
