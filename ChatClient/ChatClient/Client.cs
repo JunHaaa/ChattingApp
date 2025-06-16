@@ -46,8 +46,8 @@ class TcpClient
         Message message = new Message();
         string[] type_text = text.Split("!");
         message.type = Int32.Parse(type_text[0]);
-        
-        
+
+
 
         string[] receivers_text = type_text[1].Split("#");
         message.receivers_name = receivers_text[0].Split("@");
@@ -65,11 +65,12 @@ class TcpClient
         byte[] rcv_buf = new byte[4096];
         socket.Receive(rcv_buf);
         string s = Encoding.UTF8.GetString(rcv_buf);
-        
+
         if (s.Equals("empty"))
         {
             Console.WriteLine("message empty");
-        }else
+        }
+        else
         {
             ChatLogWrite(s);
         }
@@ -77,13 +78,13 @@ class TcpClient
     public void ChatLogWrite(string chat_log)
     {
         string[] chat = chat_log.Split("$");
-        
-        foreach (string s in chat[..^1]) 
+
+        foreach (string s in chat[..^1])
         {
-            
+
             Message m = MessageSplit(s);
             Console.WriteLine("[{0}]: {1}", m.receivers_name[0], m.text);
-            
+
         }
     }
     public string MessageFormat(int type, string receiver, string text)
@@ -96,7 +97,7 @@ class TcpClient
         Task<string> send_text = ReadLineAsync();
         string message = MessageFormat(type, receiver, send_text.Result.ToString());
         byte[] buf = Encoding.UTF8.GetBytes(message);
-        
+
         this.socket.Send(buf);
     }
 

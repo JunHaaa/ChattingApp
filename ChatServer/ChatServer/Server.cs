@@ -11,7 +11,7 @@ class TcpServer
     static Dictionary<Socket, string> client_socket_dic = new Dictionary<Socket, string>();
     static ConnectionMultiplexer redis;
     static IDatabase db;
-    
+
     class ChattingRoom
     {
         static int id = 0;
@@ -41,14 +41,14 @@ class TcpServer
         server_socket.Listen(10);
         Console.WriteLine("서버 시작");
 
-        
+
         redis = ConnectionMultiplexer.Connect("127.0.0.1:6379");
         if (!redis.IsConnected)
         {
             Console.WriteLine("redis 서버에 연결 실패");
         }
         db = redis.GetDatabase();
-        
+
 
         while (true)
         {
